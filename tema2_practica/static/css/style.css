@@ -1,0 +1,123 @@
+@font-face {
+    font-family: pepperoni;
+    src: url(../font/pepperoni.ttf);
+}
+@font-face {
+    font-family: hot;
+    src: url(../font/balloon.ttf);
+}
+:root{
+    --color-primary: #FFB300;
+    --color-secondary: #FFA000;
+    --color-title: #D32F2F;
+    --color-text: #000000;
+    --color-bg: #FFE082;
+    --font-title: pepperoni;
+    --font-text: hot;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    background-color: var(--color-primary);
+}
+.logo{
+    width: 45px;
+    margin: 25px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    padding: .5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-title);
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: var(--font-title);
+    transition: .5s;
+}
+nav ul li a:hover{
+    font-size: 2rem;
+    color: #641717;
+}
+main{
+    background-color: var(--color-bg);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+footer{
+    width: 100vw;
+    min-height: 4rem;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img{
+    width: 65px;
+    margin: 25px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li a{
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: pepperoni;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: var(--color-title);
+}
+.about{
+    display: flex;
+}
+.about-content{
+    width: 350px;
+    padding: 25px;
+}
+.pizza{
+    width: 330px;
+    height: 400px;
+}
+.about-text{
+    font-family: var(--font-text);
+    font-size: .8rem;
+}
+.cartilla{
+    margin-top: 10px;
+    display: flex;
+    justify-self: center;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.cartilla img{
+    width: 300px;
+    height: 350px;
+    padding: 5px;
+}
+.elementos{
+    display: flex;
+}
+.elementos p{
+    font-family: var(--font-text);
+    font-size: .8rem;
+}
