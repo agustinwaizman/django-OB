@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Buscando elementos cuyo id sea menor o igual que 15</h3>
+    <ul>
+        {% for elm in filtered %}
+        <li>{{ elm.email }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Elementos ordenados por email</h3>
+    <ul>
+        {% for order in orders %}
+            <li>{{ order.email }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Obteniendo los primeros 5 elementos saltando los 5 primeros</h3>
+    <ul>
+        {% for offset in offsets %}
+            <li>{{ offset.email }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Obteniendo los 10 primeros</h3>
+    <ol>
+        {% for limit in limits %}
+            <li>{{ limit.email }}</li>
+        {% endfor %}
+    </ol>
+    <h3>Unico objeto obtenido por id</h3>
+    <p>{{ author }}</p>
+    <h1>Todos los autores</h1>
+    <ul>
+        {% for author in authors %}
+        <li>{{ author.name }} ( {{ author.email }} )</li>
+        {% endfor %}
+    </ul>
+    <h2> Total de autores: {{ authors|length }}</h2>
+</body>
+</html>
